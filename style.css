@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0b0b0f;
+    color: white;
+    text-align: center;
+}
+
+/* INTRO */
+#intro {
+    position: fixed;
+    inset: 0;
+    background: #0b0b0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 10;
+}
+
+#intro h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+
+#intro p {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* MAIN */
+.hidden {
+    display: none;
+}
+
+#main {
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header span {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.card {
+    background: #12121a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 600px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #0b0b0f;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+a {
+    color: #7c7cff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    opacity: 0.4;
+    font-size: 13px;
+}
